@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Navbar/style.css" />
 </head>
+
 <body>
+    <!-- nav -->
+    <header style="background-color: white; width: 100%">
+        <nav style="display: flex; justify-content: space-between;
+        ">
+            <div style="display: flex;
+            justify-content: center;
+            align-items: center;
+            ">
+                <h1 id="logos" style="font-size: 25px;"><img src="../assets/logo.png"
+                        style="width: 30px; 
+                        height: 30px; margin-right: 5px;
+                        " />Rentलि</h1>
+                <ul>
+                    <a href="#home" id="nav-list">
+                        <li>Home</li>
+                    </a>
+                    <a href="#search" id="nav-list">
+                        <li>Search</li>
+                    </a>
+                    <a href="#rentals" id="nav-list">
+                        <li>Rentals</li>
+                    </a>
+                </ul>
+            </div>
+            <div style="display: flex;
+            justify-content: center;
+            align-items: center;
+            ">
+                <ul>
+                    <a href="../Auth/login.html" id="btn">
+                        <li>Sign-in</li>
+                    </a>
+                    <a href="../Auth/sign-up.html" id="btn-signUp">
+                        <li>Sign-up</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /nav -->
+    <div class="main-container">
+        <!-- ********************** -->
+        <div class="container">
+            <h2 style="font-weight: 200; margin-bottom: 10px">
+                Featured Rentals:<br />Vehicles
+            </h2>
+            <div class="image">
+                <img class="product-image" src="../assets/car.png" alt="vehicle img" />
+            </div>
+            <p>
+                Explore our diverse range of vehicle rentals, from cars to trucks,
+                catering to every travel need.
+            </p>
+            <input id="view-more" type="button" value="view-more" />
+        </div>
+        <!-- ************************************** -->
+        <div class="container">
+            <h2 style="font-weight: 200; margin-bottom: 10px">
+                Featured Rentals:<br />Rooms
+            </h2>
+            <div class="image">
+                <img class="product-image" src="../assets/room.png" alt="vehicle img" />
+            </div>
+            <p>
+                Find the perfect room rental that matches your preferences and budget
+                for a comfortable stay.
+            </p>
+            <input id="view-more" type="button" value="view-more" />
+        </div>
+        <!-- ************************************ -->
+        <div class="container">
+            <h2 style="font-weight: 200; margin-bottom: 10px">
+                Featured Rentals:<br />Clothes
+            </h2>
+            <div class="image">
+                <img class="product-image" src="../assets/cloth.jpg" alt="vehicle img" />
+            </div>
+            <p>
+                Browse our collection of stylish and affordable clothing rentals for
+                your special occasions.
+            </p>
+            <input id="view-more" type="button" value="view-more" />
+        </div>
+    </div>
+    <!-- ****** testimonial container******-->
     
+    <div class="testimonial-container">
+        <div class="testimonial-subContainer">
+        <div class="testimonial-image">
+            <img src="../assets/client1.jpg" alt="">
+        </div>
+        <p> <strong> Rentलि </strong>made finding a cozy apartment so easy! The process was smooth, and the place exceeded my expectations.</p>
+    </div>
+</div>
 </body>
+
 </html>
