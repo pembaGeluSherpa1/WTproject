@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <button type="submit" class="signup-btn">Sign Up</button>
+
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <button type="button" class="whatsapp-btn" onclick="sendWhatsAppCode()">Send Code via WhatsApp</button>
+      <button type="button" class="sms-btn" onclick="sendSMSCode()">Send Code via SMS</button>
+    </form>
+
+    <div class="or">OR</div>
+
+    <button class="google-btn">Sign up with Google</button>
+    <button class="facebook-btn">Sign up with Facebook</button>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      const confirm = document.getElementById('confirmPassword').value;
+      if (password !== confirm) {
+        alert('Passwords do not match!');
+      } else {
+        alert('Account created successfully!');
+      }
+    });
+  </script>
+
+<script>
+  function sendWhatsAppCode() {
+    const phone = document.getElementById("phone").value;
+    if (phone) {
+      alert("Code sent via WhatsApp to " + phone);
+    } else {
+      alert("Please enter your phone number first!");
+    }
+  }
+
+  function sendSMSCode() {
+    const phone = document.getElementById("phone").value;
+    if (phone) {
+      alert("Code sent via SMS to " + phone);
+    } else {
+      alert("Please enter your phone number first!");
+    }
+  }
+</script>
+</body>
+</html>
